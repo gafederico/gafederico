@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ site.title }} | Senior Software Engineer</title>
+<meta name="description" content="{{ site.description }}">
+<meta property="og:title" content="{{ site.title }} | Senior Software Engineer">
+<meta property="og:description" content="{{ site.description }}">
+<meta property="og:type" content="profile">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<style>
+:root {
+  --paper: #F4F7FA;
+  --ink: #13202C;
+  --muted: #566777;
+  --rule: #D3DDE6;
+  --link: #145A8A;
+  --panel: #10263B;
+  --panel-ink: #F2F6FA;
+  --panel-muted: #A9C3DA;
+  --celeste: #8CC2EC;
+  --sol: #F6B40E;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --gutter: clamp(1.5rem, 5vw, 5rem);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0B1620;
+    --ink: #DDE7EF;
+    --muted: #94A8B9;
+    --rule: #213445;
+    --link: #8CC2EC;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+a { color: var(--link); text-underline-offset: 0.2em; }
+a:focus-visible { outline: 2px solid var(--sol); outline-offset: 3px; border-radius: 2px; }
+
+/* Page grid: the intro block from the README becomes a fixed side panel,
+   everything else flows in the second column. */
+main {
+  display: grid;
+  grid-template-columns: minmax(18rem, 32%) minmax(0, 1fr);
+}
+main > * {
+  grid-column: 2;
+  width: min(100% - 2 * var(--gutter), 43rem);
+  margin: 0 0 0 var(--gutter);
+}
+
+/* Side panel */
+main > .intro {
+  grid-column: 1;
+  grid-row: 1 / span 60;
+  align-self: start;
+  position: sticky;
+  top: 0;
+  width: auto;
+  height: 100vh;
+  margin: 0;
+  padding: clamp(2rem, 4vw, 3.5rem);
+  display: flex;
+  flex-direction: column;
+  background: var(--panel);
+  color: var(--panel-muted);
+  text-align: left;
+  overflow-y: auto;
+}
+.intro h1 {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(2.75rem, 4.8vw, 4.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  word-spacing: 100vw; /* one word per line */
+  color: var(--panel-ink);
+}
+.intro p { margin: 0; }
+.intro .role { margin-top: 1.75rem; line-height: 1.45; }
+.intro .role br { display: none; }
+.intro .role strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 1.1875rem;
+  font-weight: 600;
+  color: var(--panel-ink);
+}
+.intro .chips { margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.45rem; }
+.intro code {
+  font-family: var(--body);
+  font-size: 0.875rem;
+  padding: 0.2em 0.65em;
+  border: 1px solid rgba(140, 194, 236, 0.45);
+  border-radius: 4px;
+  color: var(--celeste);
+  white-space: nowrap;
+}
+.intro .links {
+  margin-top: auto;
+  padding-top: 2.5rem;
+  font-size: 0; /* hides the " | " separators that the GitHub profile view needs */
+}
+.intro .links a {
+  display: block;
+  width: fit-content;
+  padding: 0.3rem 0;
+  font-size: 1.0625rem;
+  color: var(--panel-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--sol);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.3em;
+}
+.intro .links a:hover { color: var(--sol); }
+
+/* Content column */
+main > .intro + * {
+  margin-top: clamp(3rem, 7vw, 5.5rem);
+  font-size: 1.3125rem;
+  line-height: 1.5;
+}
+main > *:last-child { margin-bottom: clamp(3rem, 7vw, 5.5rem); }
+main > h2 {
+  margin-top: 3.5rem;
+  margin-bottom: 0.5rem;
+  padding-top: 1.25rem;
+  border-top: 2px solid var(--ink);
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.625rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+main > p { margin-top: 1rem; }
+
+table { border-collapse: collapse; }
+th {
+  padding: 0.5rem 0;
+  text-align: left;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+td {
+  padding: 0.95rem 0;
+  border-top: 1px solid var(--rule);
+  vertical-align: top;
+  color: var(--muted);
+}
+td strong, td a { color: var(--ink); font-weight: 600; }
+td a { color: var(--link); }
+th:first-child, td:first-child { width: 34%; padding-right: 1.5rem; }
+
+main > ul { list-style: none; padding: 0; }
+main > ul li { padding: 0.8rem 0; border-top: 1px solid var(--rule); color: var(--muted); }
+main > ul li:first-child { border-top: 0; }
+main > ul li strong { color: var(--ink); font-weight: 600; }
+
+@media (max-width: 52rem) {
+  main { display: block; }
+  main > * { width: auto; margin: 0 var(--gutter); }
+  main > .intro {
+    position: static;
+    height: auto;
+    margin: 0;
+    padding: 2.75rem var(--gutter) 2.25rem;
+  }
+  main > .intro + * { margin-top: 2.5rem; font-size: 1.1875rem; }
+  main > *:last-child { margin-bottom: 3rem; }
+  table, tbody, tr, td { display: block; }
+  tbody, tr, td { width: 100%; }
+  thead { display: none; }
+  tr { padding: 0.9rem 0; border-top: 1px solid var(--rule); }
+  td { padding: 0; border: 0; }
+  td:first-child { width: 100%; padding: 0 0 0.3rem; }
+}
+
+@media print {
+  main { display: block; }
+  main > .intro { position: static; height: auto; }
+}
+</style>
+</head>
+<body>
+<main>
+{{ content }}
+</main>
+</body>
+</html>
