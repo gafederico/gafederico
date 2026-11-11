@@ -1,39 +1,23 @@
-# 👋 Hi, I'm Gabriel Federico
+<div align="center" class="intro">
+<h1>Gabriel Federico</h1>
+<p class="role"><strong>Senior Software Engineer</strong><br>Backend architecture, RESTful APIs and automated testing</p>
+<p class="chips"><code>C# / .NET</code> <code>Python</code> <code>SQL Server</code> <code>GCP</code> <code>Azure DevOps</code> <code>React</code></p>
+<p class="links"><a href="https://www.linkedin.com/in/gabrielfederico96">LinkedIn</a> &nbsp;|&nbsp; <a href="mailto:gabriel.federico.96@gmail.com">Email</a> &nbsp;|&nbsp; <a href="https://github.com/gafederico?tab=repositories">Repositories</a></p>
+</div>
 
 I'm a **Senior Software Engineer** with over 10 years of experience. I specialize in building robust backend architectures, scalable RESTful APIs, and automated testing systems. My career has been focused on delivering high-quality code for large-scale projects, including products for **Google**.
 
----
+## Tech stack
 
-## ⚙️ Tech Stack
+| Area | Technologies |
+| :--- | :--- |
+| **Languages** | **C# / .NET**: Core 6+, Framework 4.8, microservices<br>**Python**: automated frameworks, scripting, backend<br>**SQL**: T-SQL, stored procedures, performance optimization<br>**JavaScript**: React.JS, AngularJS, jQuery |
+| **Backend and architecture** | **RESTful API design**: scalable and secure service integration<br>**Microservices and MVC**: architecture design and maintenance<br>**Entity Framework**: data modeling and consumption<br>**Automated testing frameworks**: framework design with Python |
+| **Databases and storage** | **SQL Server and MySQL**: relational database management<br>**MongoDB and CouchDB**: NoSQL implementation |
+| **Cloud and DevOps** | **Google Cloud Platform**: VM provisioning and infrastructure<br>**Azure DevOps**: CI/CD and project lifecycle management<br>**Git**: version control and collaborative workflows |
+| **Frontend** | **React.JS and AngularJS**: modern SPA development<br>**HTML5, CSS3, Bootstrap**: responsive web design |
 
-#### 🧠 Languages
-- **C#.NET** (Core 6+, Framework 4.8, Microservices)
-- **Python** (Automated frameworks, scripting, backend)
-- **SQL** (T-SQL, stored procedures, performance optimization)
-- **JavaScript** (React.JS, AngularJS, jQuery)
-
-#### 🏗️ Backend & Architecture
-- **RESTful API Design** (Scalable and secure service integration)
-- **Microservices & MVC** (Architecture design and maintenance)
-- **Entity Framework** (Data modeling and consumption)
-- **Automated Testing Frameworks** (Framework design with Python)
-
-#### 🗄️ Databases & Storage
-- **SQL Server & MySQL** (Relational database management)
-- **MongoDB & CouchDB** (NoSQL implementation)
-
-#### ☁️ Cloud & DevOps
-- **Google Cloud Platform (GCP)** (VM provisioning and infrastructure)
-- **Azure DevOps** (CI/CD and project lifecycle management)
-- **Git** (Version control and collaborative workflows)
-
-#### 🌐 Frontend Development
-- **React.JS & AngularJS** (Modern SPA development)
-- **HTML5, CSS3, Bootstrap** (Responsive web design)
-
----
-
-## 🚀 Key Professional Projects
+## Key professional projects
 
 | Project | Description |
 | :--- | :--- |
@@ -42,33 +26,20 @@ I'm a **Senior Software Engineer** with over 10 years of experience. I specializ
 | **Nosis S.A. Systems** | Building business and credit report microservices with C#/.NET and SQL Server. |
 | **RESTful Back-end APIs** | Developed core banking/financial APIs for Deloitte using .NET Core and Azure DevOps. |
 
----
+## Open source
 
-## 🎯 About Me
+| Project | Description |
+| :--- | :--- |
+| [**currency-api-arg**](https://github.com/gafederico/currency-api-arg) | Full-stack dashboard for Argentina exchange rates, built with Python (FastAPI) and React (TypeScript). Real-time data, historical analysis and currency conversion. |
 
-- 🇦🇷 **Based in:** Argentina
-- 🎓 **Education:** Software Engineering (UADE)
-- 💼 **Currently:** Senior Software Engineer focused on high-performance backend systems
-- ✨ **Professional Interests:** Maintaining high code standards, mentoring junior developers, and exploring real-time graphics through game development studies
+## About me
 
----
+- **Based in:** Argentina
+- **Education:** Software Engineering (UADE)
+- **Currently:** Senior Software Engineer focused on high-performance backend systems
+- **Professional interests:** Maintaining high code standards, mentoring junior developers, and exploring real-time graphics through game development studies
 
-## 📫 Let's Connect
+## Let's connect
 
-- [**LinkedIn**](https://www.linkedin.com/in/gabrielfederico96)
-- [**Email**](mailto:gabriel.federico.96@gmail.com)
-  
-<!--
-**gafederico/gafederico** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- [LinkedIn](https://www.linkedin.com/in/gabrielfederico96)
+- [Email](mailto:gabriel.federico.96@gmail.com)
